@@ -1,0 +1,15 @@
+<div class="">
+    <%= image_tag @upload.image if @upload.image.attached? %>
+
+
+    <div class="">
+        <h1 class="">
+            <%= link_to @upload.title, @upload %>
+        </h1>
+
+    <div class="">
+        <%= @upload.description %>
+    </div>
+    </div>
+</div>
+

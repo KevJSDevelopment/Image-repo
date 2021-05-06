@@ -1,0 +1,65 @@
+<div class="container profile-container">
+    <div class="row">
+        <div class="col-3 nav">
+            <div class="row">
+                <div class="col-7 user-image">
+                    <%= image_tag @user.image, :class => "profile-image" %>
+                </div>
+                <div class="col-5 user-info">
+                    <div class="row-12">
+                        <% username = @user.username.slice(0,1).capitalize + @user.username.slice(1..-1) %>
+                        <%= username %>
+                    </div>
+                    <div class="row-12">
+                        Albums: <%= @user.albums.size %>
+                    </div>
+                    <div class="row-12">
+                        Uploads: <%= @user.uploads.size %>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row-12">
+                        Profile
+                    </div>
+                    <div class="row-12">
+                        Friends
+                    </div>
+                    <div class="row-12">
+                        Logout
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9 profile">
+            <div class="row album-container">
+                <fieldset class="col-12 scheduler-border">
+                    <legend class="scheduler-border">Albums</legend>
+                        <% @user.albums.each do |album| %>
+                            <div class="card">
+                                <div class="card-title">
+                                    <%= album.title %>
+                                </div>
+                                <div class="card-body">
+                                    <% album.uploads.each do |upload| %>
+                                        <div class="col">
+                                            <%= image_tag upload.image if upload.image.attached? %>
+                                        </div>
+                                    <% end %>
+                                </div>
+                            </div>
+                        <% end %>
+                </fieldset>
+            </div>
+            <div class="row upload-container">
+                <fieldset class="col-12 scheduler-border">
+                    <legend class="scheduler-border">Uploads</legend>
+                    <% @user.uploads.each do |upload| %>
+                        <%= image_tag upload.image, :class => "card-img-top" %>
+                    <% end %>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
