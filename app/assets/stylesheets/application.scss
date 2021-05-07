@@ -12,14 +12,14 @@
     bottom: 5px;
 }
 
-.upload-container {
+.uploads {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     grid-auto-rows: minmax(150px, auto);
 }
 
-.upload {
+.upload-container {
     margin-top: 5%;
 }
 

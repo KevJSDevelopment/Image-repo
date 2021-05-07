@@ -1,9 +1,3 @@
 <%= form_tag(home_path, method: :get) do %>
   <%= submit_tag ("Back"), class: 'back-button btn btn-outline-dark'%>
 <% end %>
-
-<div class="upload container">
-    <div class="col">
-        <%= render partial: "upload_form", locals: {button_text: "Edit Image"} %>
-    </div>
-</div>

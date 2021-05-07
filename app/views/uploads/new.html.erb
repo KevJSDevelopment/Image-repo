@@ -2,8 +2,4 @@
   <%= submit_tag ("Back"), class: 'back-button btn btn-outline-dark'%>
 <% end %>
 
-<div class="upload container">
-    <div class="col">
-        <%= render partial: "upload_form", locals: {button_text: "Upload Image"} %>
-    </div>
-</div>
+<%= render partial: "upload_form", locals: {button_text: "Upload Image"} %>
