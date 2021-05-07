@@ -1,3 +1,6 @@
+<%= form_tag(home_path, method: :get) do %>
+  <%= submit_tag ("Back"), class: 'back-button btn btn-outline-dark'%>
+<% end %>
 <div class="">
     <%= image_tag @upload.image if @upload.image.attached? %>
 
