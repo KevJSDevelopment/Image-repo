@@ -19,7 +19,7 @@
 
 <div class="uploads">
 <% @uploads.each_with_index do |upload, index| %>
-    <div class="card upload" style="width: 14rem; height: 20rem;">
+    <div class="card upload">
         <% if upload.image.attached? %>
         <%= image_tag upload.image, :class => "card-img-top" %>
         <div class="card-body">

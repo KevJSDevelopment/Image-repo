@@ -14,9 +14,14 @@
 
 .uploads {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 5px;
     grid-auto-rows: minmax(150px, auto);
+}
+
+.card.upload {
+    width: auto;
+    height: 18rem;
 }
 
 .upload-container {
