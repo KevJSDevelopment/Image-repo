@@ -1,13 +1,16 @@
 class UploadsController < ApplicationController
 
+    def home 
+        @uploads = Upload.all
+        render :home
+    end
+
     def new
         @upload = Upload.new
     end
 
     def create
-        if session[:user_id]
-            @upload = Upload.new(title: params[:upload][:title], description: params[:upload][:description], image: params[:upload][:image] ,user_id: session[:user_id])
-        end
+            @upload = Upload.new(title: params[:upload][:title], description: params[:upload][:description], image: params[:upload][:image])
 
         if @upload.save
             redirect_to upload_path(@upload.id)
@@ -18,10 +21,6 @@ class UploadsController < ApplicationController
 
     def show
         @upload = Upload.find(params[:id])
-    end
-
-    def index
-        @uploads = Upload.where(user_id: params[:user_id])
     end
 
     private
