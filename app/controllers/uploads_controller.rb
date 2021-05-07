@@ -1,7 +1,11 @@
 class UploadsController < ApplicationController
 
     def home 
-        @uploads = Upload.all
+        if params[:search]
+            @uploads = Upload.search(params[:search])
+        else
+            @uploads = Upload.all
+        end
         render :home
     end
 
@@ -10,7 +14,7 @@ class UploadsController < ApplicationController
     end
 
     def create
-            @upload = Upload.new(title: params[:upload][:title], description: params[:upload][:description], image: params[:upload][:image])
+        @upload = Upload.new(title: params[:upload][:title], description: params[:upload][:description], image: params[:upload][:image])
 
         if @upload.save
             redirect_to upload_path(@upload.id)
