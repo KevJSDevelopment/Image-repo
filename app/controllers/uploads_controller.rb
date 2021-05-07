@@ -14,7 +14,7 @@ class UploadsController < ApplicationController
     end
 
     def create
-        @upload = Upload.new(title: params[:upload][:title], description: params[:upload][:description], image: params[:upload][:image])
+        @upload = Upload.new(upload_params)
 
         if @upload.save
             redirect_to upload_path(@upload.id)
@@ -23,8 +23,18 @@ class UploadsController < ApplicationController
         end
     end
 
-    def show
+    def edit
         @upload = Upload.find(params[:id])
+    end
+
+    def update
+        @upload = Upload.find(params[:id])
+        # byebug
+        if @upload.update(upload_params)
+            redirect_to home_path
+        else 
+            render :edit
+        end
     end
 
     private

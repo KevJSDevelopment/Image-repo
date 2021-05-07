@@ -22,7 +22,7 @@
         <div class="card-body">
             <h5 class="card-title"><%= upload.title %></h5>
             <p class="card-text"> <%= upload.description[0..30] %></p>
-            <%= form_tag(upload_path(upload.id), method: :get) do %>
+            <%= form_tag(edit_upload_path(upload.id), method: :get) do %>
                 <%= submit_tag ("View/edit"), class: 'btn btn-outline-dark'%>
             <% end %>
         </div>
