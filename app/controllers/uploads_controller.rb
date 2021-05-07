@@ -17,7 +17,7 @@ class UploadsController < ApplicationController
         @upload = Upload.new(upload_params)
 
         if @upload.save
-            redirect_to upload_path(@upload.id)
+            redirect_to home_path
         else
             render :new
         end

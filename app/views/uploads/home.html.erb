@@ -6,7 +6,7 @@
     <form class="d-flex">
       <div class= "search d-flex">
             <%= form_tag(home_path, method: :get) do %>
-                <%= text_field_tag(:search, params[:search], class: 'form-control') %>
+                <%= text_field_tag(:search, params[:search], class: 'form-control', placeholder: "Search image title") %>
                 <%= submit_tag ("Search"), class: 'btn btn-outline-light'%>
             <% end %>
         </div>
@@ -14,18 +14,19 @@
   </div>
 </nav>
 
-
-<% @uploads.each do |upload| %>
-    <div class="card" style="width: 18rem;">
+<div class="upload-container">
+<% @uploads.each_with_index do |upload, index| %>
+    <div class="card upload" style="width: 14rem; height: 20rem;">
         <% if upload.image.attached? %>
         <%= image_tag upload.image, :class => "card-img-top" %>
         <div class="card-body">
             <h5 class="card-title"><%= upload.title %></h5>
             <p class="card-text"> <%= upload.description[0..30] %></p>
             <%= form_tag(edit_upload_path(upload.id), method: :get) do %>
-                <%= submit_tag ("View/edit"), class: 'btn btn-outline-dark'%>
+                <%= submit_tag ("View/edit"), class: 'card-btn btn btn-outline-dark'%>
             <% end %>
         </div>
         <% end %>
     </div>
 <% end %>
+</div>
