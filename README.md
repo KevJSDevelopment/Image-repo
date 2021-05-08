@@ -12,21 +12,21 @@ To setup and run the project locally, clone the repository using either of the f
 
 SSH: 
 
-        > git clone git@github.com:KevJSDevelopment/Image-repo.gitrun 
+    git clone git@github.com:KevJSDevelopment/Image-repo.gitrun 
 
 HTTPS:
 
-        > git clone https://github.com/KevJSDevelopment/Image-repo.git
+    git clone https://github.com/KevJSDevelopment/Image-repo.git
 
 Once you have cloned the repository, run the following commands: 
 
-        > bundle
+    bundle
 
-        > rails db:setup
+    rails db:setup
 
-        > rails db:migrate
-        
-        > rails s
+    rails db:migrate
+
+    rails s
 
 ## How to navigate the app
 Once you land on the app you can start by uploading a new image. You can either drag and drop an image or click on the file field to select a file to upload. 
