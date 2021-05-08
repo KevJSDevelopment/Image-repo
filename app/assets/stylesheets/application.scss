@@ -2,6 +2,11 @@
 @import "dropzone/dist/min/basic.min.css";
 @import "bootstrap/scss/bootstrap";
 
+.dropzone {
+    border: 2px solid gray;
+    border-radius: 2%;
+    text-align: center;
+}
 .card { 
     margin: 5%;
     height: auto;
