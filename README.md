@@ -1,10 +1,10 @@
 # README
 
-# Shopify Internship Challenge
+# Shopify Backend Internship Challenge
 ## Introduction
 This repository is for the project submission for the Shopify Backend Intern Challenge. This project is built in Ruby on Rails and is designed to be an image repository that allows users to upload new images, edit previous uploads, and search images.
 
-## Running the Project Running
+## Running the App
 
 This Project is hosted on heroku and can be tested at https://rocky-harbor-68416.herokuapp.com/
 
