@@ -2,7 +2,7 @@
 
 # Shopify Backend Internship Challenge
 ## Introduction
-This repository is for the project submission for the Shopify Backend Intern Challenge. This project is built in Ruby on Rails and is designed to be an image repository that allows users to upload new images, edit previous uploads, and search images.
+This repository is for the project submission for the Shopify Backend Intern Challenge. This project is built in Ruby on Rails and is designed to be an image repository that allows users to upload new images, edit previous uploads, and search images. The app utilizes jquery, dropzone, and stimulus.js to allow for drag and drop functionality.
 
 ## Running the App
 
