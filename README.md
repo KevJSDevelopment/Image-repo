@@ -9,10 +9,13 @@ This repository is for the project submission for the Shopify Backend Intern Cha
 This Project is hosted on heroku and can be tested at https://rocky-harbor-68416.herokuapp.com/
 
 To setup and run the project locally, clone the repository using either of the following commands:
+
 SSH:    
         > git clone git@github.com:KevJSDevelopment/Image-repo.gitrun 
+
 HTTPS:
         > git clone https://github.com/KevJSDevelopment/Image-repo.git
+        
 Once you have cloned the repository, run the following commands: 
         > bundle
         > rails db:setup
