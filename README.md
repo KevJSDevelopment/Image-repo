@@ -28,7 +28,7 @@ Once you have cloned the repository, run the following commands to install depen
 
     rails s
 
-I recommend testing locally using localhost, however this Project is also hosted on heroku and can be tested at https://rocky-harbor-68416.herokuapp.com/
+I recommend testing locally using localhost, however this Project is also hosted on heroku and can be tested at https://rocky-harbor-68416.herokuapp.com/ . The app on heroku works as intended but since development active storage is utilizing local disk storage, older images will not show up.
 
 ## How to navigate the app
 Once you land on the app you can start by uploading a new image. You can either drag and drop an image or click on the file field to select a file to upload. 
