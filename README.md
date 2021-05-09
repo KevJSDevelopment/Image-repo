@@ -18,14 +18,15 @@ HTTPS:
 
 Once you have cloned the repository, run the following commands: 
 
-    bundle
+    bundle install
+
+    yarn install
 
     rails db:setup
 
     rails db:migrate
 
     rails s
-
 
 I recommend testing locally using local storage, however this Project is also hosted on heroku and can be tested at https://rocky-harbor-68416.herokuapp.com/
 
