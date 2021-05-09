@@ -6,8 +6,6 @@ This repository is for the project submission for the Shopify Backend Intern Cha
 
 ## Running the App
 
-This Project is hosted on heroku and can be tested at https://rocky-harbor-68416.herokuapp.com/
-
 To setup and run the project locally, clone the repository using either of the following commands:
 
 SSH: 
@@ -27,6 +25,9 @@ Once you have cloned the repository, run the following commands:
     rails db:migrate
 
     rails s
+
+
+I recommend testing locally using local storage, however this Project is also hosted on heroku and can be tested at https://rocky-harbor-68416.herokuapp.com/
 
 ## How to navigate the app
 Once you land on the app you can start by uploading a new image. You can either drag and drop an image or click on the file field to select a file to upload. 

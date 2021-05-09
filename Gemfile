@@ -58,3 +58,5 @@ gem 'active_storage_validations'
 
 # Optional, to use :dimension validator or :aspect_ratio validator
 gem 'mini_magick', '>= 4.9.5'
+gem "google-cloud-storage", "~> 1.8", require: false
+gem 'dotenv-rails'
