@@ -43,3 +43,10 @@ As soon as you upload your image and return to the home page, go ahead and try t
 
 If you want to see all photos again, either click the "all photos" button or clear the search and hit the search button again.
 
+## Tests
+
+Using rspec testing, some basic tests were added to this app for the upload model, to test just run the command:
+
+    rspec
+
+If you cloned the repository down, you can see the tests in the spec folder.
